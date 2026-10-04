@@ -952,6 +952,16 @@ body::before {
   box-shadow: 0 42px 110px rgba(0,0,0,.38), 0 0 0 12px rgba(255,255,255,.018);
 }
 .hero-car-img { width: 108%; height: 108%; object-fit: contain; }
+.hero-car-display {
+  overflow: visible;
+  background: radial-gradient(ellipse at 58% 66%, rgba(207,173,104,.14), transparent 57%);
+  border: 0;
+  box-shadow: none;
+}
+.hero-car-img {
+  width: 130%; height: 130%; max-width: none; object-fit: contain;
+  filter: drop-shadow(0 28px 34px rgba(0,0,0,.5)) drop-shadow(0 12px 30px rgba(207,173,104,.14));
+}
 .hero-glow-ring { border-color: rgba(184,144,71,.22); }
 .hero-stats { gap: clamp(20px,3.5vw,50px); }
 .hero-stat h3 { font-size: 2.35rem; color: var(--champagne-light); }
@@ -1041,6 +1051,7 @@ body::before {
   .hero { min-height: auto; padding-top: 125px; }
   .hero-car-wrap { height: clamp(260px,65vw,390px); }
   .hero-car-display { border-radius: 2px; }
+  .hero-car-img { width: 116%; height: 116%; }
   .hero-buttons { gap: 10px; }
   .btn-primary, .btn-secondary { padding: 14px 17px; }
   .booking-header { min-height: 36vh; padding: 140px 22px 50px; }
