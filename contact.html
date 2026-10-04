@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — AS Tours & Travels</title>
+  <meta name="description" content="Get in touch with AS Tours & Travels to book a car for your journey.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/as-mark.svg">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader-ring">
+    <div class="loader-ring-inner"></div>
+    <div class="loader-ring-inner"></div>
+    <div class="loader-ring-inner"></div>
+    <div class="loader-text"><img src="assets/images/as-mark.svg" alt="AS Tours &amp; Travels"></div>
+    <div class="loader-sub">Tours & Travels</div>
+  </div>
+</div>
+
+<div class="ambient-bg"></div>
+<canvas id="lux-particles"></canvas>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-mark"><img src="assets/images/as-mark.svg" alt=""></span>
+    <div class="nav-logo-text">
+      <span class="nav-logo-main">AS</span>
+      <span class="nav-logo-sub">TOURS &amp; TRAVELS</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="fleet.html">Our Fleet</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="booking.html" class="nav-cta"><i class="fas fa-calendar-check"></i> Book a Ride</a>
+  </div>
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="page-header-bg"></div>
+  <h1>Contact <span class="gold">Us</span></h1>
+  <p>We're here to help you 24/7. Get in touch with us.</p>
+  <div class="breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></div>
+</section>
+
+<section class="section" style="padding-top: 30px;">
+  <div class="section-header">
+    <div class="section-tag">Get In Touch</div>
+    <h2 class="section-title">We'd Love to <span class="gold">Hear From You</span></h2>
+    <p class="section-sub">Call or fill the form to reach us. We respond within minutes!</p>
+  </div>
+  
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
+        <div>
+          <h4>Call Us</h4>
+          <p><strong style="color: var(--champagne-light);">+91 9561345579</strong></p>
+          <p><strong style="color: var(--champagne-light);">+91 7769079493</strong></p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-route" aria-hidden="true"></i></div>
+        <div>
+          <h4>Book online</h4>
+          <p>Send your route and travel date. We’ll confirm the details with you.</p>
+          <p><a href="booking.html" style="color: var(--champagne-light);">Start a booking <i class="fas fa-arrow-right"></i></a></p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+        <div>
+          <h4>Email Us</h4>
+          <p><strong style="color: var(--champagne-light);">adeshjadhav561@gmail.com</strong></p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-phone-volume" aria-hidden="true"></i></div>
+        <div>
+          <h4>Toll Free</h4>
+          <p><strong style="color: var(--champagne-light);">022 68925010</strong></p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+        <div>
+          <h4>Service Area</h4>
+          <p>All major cities across India</p>
+        </div>
+      </div>
+      
+      <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
+        <a href="tel:+919561345579" style="flex: 1; padding: 16px 25px; background: linear-gradient(135deg, var(--champagne), var(--champagne-dark)); color: var(--deep-espresso); border: none; font-weight: 600; font-size: 0.8rem; letter-spacing: 1px; cursor: pointer; transition: var(--transition); text-align: center; text-decoration: none; text-transform: uppercase;">
+          <i class="fas fa-phone-alt"></i> Call Now
+        </a>
+        <a href="booking.html" class="btn-primary"><i class="fas fa-calendar-check"></i> Book a Ride</a>
+      </div>
+    </div>
+    
+    <div class="contact-form-box">
+      <h3>Book Your <span class="gold">Ride</span></h3>
+      <p style="color: var(--text-light); margin-bottom: 25px; font-size: 0.85rem; font-weight: 300;">Fill this form and we'll call you back within 15 minutes!</p>
+      
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Full Name *" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" placeholder="Phone Number *" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email Address *" required>
+        </div>
+        <div class="form-group">
+          <select id="service" required>
+            <option value="">Select Your Car *</option>
+            <option value="innova">Innova Crysta — ₹22/km</option>
+            <option value="ertiga">Maruti Ertiga — ₹16/km</option>
+            <option value="dzire">Maruti Dzire — ₹13/km</option>
+            <option value="aura">Hyundai Aura — ₹14/km</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" id="pickup" placeholder="Pickup Location">
+        </div>
+        <div class="form-group">
+          <input type="text" id="destination" placeholder="Destination">
+        </div>
+        <div class="form-group">
+          <input type="date" id="date">
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Additional Details (Time, return journey, special requests...)"></textarea>
+        </div>
+        <label class="booking-consent"><input type="checkbox" required><span>I agree that AS Tours &amp; Travels can use these details to respond to my booking request.</span></label>
+        <button type="submit" class="submit-btn"><span>Send booking request</span><i class="fas fa-arrow-right"></i></button>
+        <p class="form-status" id="contactStatus" role="status" aria-live="polite"></p>
+        <p class="form-privacy">Your request is sent to our booking team by email. No messaging app will open.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo"><img src="assets/images/as-mark.svg" alt="">AS Tours &amp; Travels</div>
+      <p>Reliable car rental service focused on comfort, safety and punctuality. Your journey, our responsibility.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="fleet.html">Our Fleet</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Our Fleet</h4>
+      <ul class="footer-links">
+        <li><a href="fleet.html">Innova Crysta</a></li>
+        <li><a href="fleet.html">Maruti Ertiga</a></li>
+        <li><a href="fleet.html">Maruti Dzire</a></li>
+        <li><a href="fleet.html">Hyundai Aura</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact Info</h4>
+      <div class="footer-contact">
+        <p><i class="fas fa-phone-alt" style="color: var(--champagne);"></i> +91 9561345579</p>
+        <p><i class="fas fa-phone-alt" style="color: var(--champagne);"></i> +91 7769079493</p>
+        <p><i class="fas fa-envelope" style="color: var(--champagne);"></i> adeshjadhav561@gmail.com</p>
+        <p><i class="fas fa-phone" style="color: var(--champagne);"></i> 022 68925010</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 AS Tours & Travels. All rights reserved.</p>
+    <div class="footer-social"><a href="tel:+919561345579" aria-label="Call AS Tours and Travels"><i class="fas fa-phone"></i></a><a href="mailto:adeshjadhav561@gmail.com" aria-label="Email AS Tours and Travels"><i class="fas fa-envelope"></i></a></div>
+  </div>
+</footer>
+
+
+
+<button class="scroll-top" aria-label="Scroll to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js" defer></script>
+<script src="js/particles.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/animations.js" defer></script>
+</body>
+</html>

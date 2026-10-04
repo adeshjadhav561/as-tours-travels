@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request a private car booking with AS Tours & Travels.">
+  <title>Book a Ride — AS Tours &amp; Travels</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/as-mark.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="preloader"><div class="loader-ring"><div class="loader-ring-inner"></div><div class="loader-ring-inner"></div><div class="loader-ring-inner"></div><div class="loader-text"><img src="assets/images/as-mark.svg" alt="AS Tours &amp; Travels"></div><div class="loader-sub">TOURS &amp; TRAVELS</div></div></div>
+  <div class="ambient-bg"></div><canvas id="lux-particles" aria-hidden="true"></canvas>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo"><span class="nav-logo-mark"><img src="assets/images/as-mark.svg" alt=""></span><span class="nav-logo-text"><span class="nav-logo-main">AS</span><span class="nav-logo-sub">TOURS &amp; TRAVELS</span></span></a>
+    <div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="fleet.html">Our Fleet</a><a href="pricing.html">Pricing</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a href="tel:+919561345579" class="nav-cta"><i class="fas fa-phone-alt"></i> Call Us</a></div>
+    <button class="hamburger" aria-label="Open navigation"><span></span><span></span><span></span></button>
+  </nav>
+  <main>
+    <section class="page-header booking-header"><div class="page-header-bg"></div><div class="section-tag">YOUR NEXT JOURNEY</div><h1>Make room for <span class="gold">the good miles.</span></h1><p>Share a few details and our team will get back to you to confirm your ride.</p><div class="breadcrumb"><a href="index.html">Home</a> / <span>Book a ride</span></div></section>
+    <section class="section booking-section">
+      <div class="booking-aside"><p class="section-tag">A BETTER WAY TO TRAVEL</p><h2>We’ll take it <span class="gold">from here.</span></h2><p>Tell us where you’re going. We’ll confirm availability and the final trip details with you directly.</p><div class="booking-contact"><span class="booking-contact-icon"><i class="fas fa-phone-alt"></i></span><div><small>NEED HELP NOW?</small><a href="tel:+919561345579">+91 95613 45579</a></div></div><div class="booking-contact"><span class="booking-contact-icon"><i class="fas fa-envelope"></i></span><div><small>EMAIL US</small><a href="mailto:adeshjadhav561@gmail.com">adeshjadhav561@gmail.com</a></div></div><div class="booking-route-art" aria-hidden="true"><span></span><span></span><span></span></div></div>
+      <div class="contact-form-box booking-form-box"><p class="form-eyebrow">BOOKING ENQUIRY · NO OBLIGATION</p><h3>Plan your <span class="gold">ride</span></h3><form id="bookingForm" data-booking-form>
+        <input type="hidden" name="_subject" value="New ride request — AS Tours & Travels"><input type="hidden" name="_template" value="table">
+        <div class="booking-fields"><div class="form-group"><label for="booking-name">Your name</label><input id="booking-name" name="name" type="text" autocomplete="name" placeholder="Full name" required></div><div class="form-group"><label for="booking-phone">Phone number</label><input id="booking-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91" required></div>
+        <div class="form-group"><label for="booking-email">Email address</label><input id="booking-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div><div class="form-group"><label for="booking-car">Choose your car</label><select id="booking-car" name="vehicle" required><option value="">Select a vehicle</option><option>Toyota Innova Crysta</option><option>Maruti Suzuki Ertiga</option><option>Maruti Suzuki Dzire</option><option>Hyundai Aura</option></select></div>
+        <div class="form-group"><label for="booking-pickup">Pickup location</label><input id="booking-pickup" name="pickup" type="text" placeholder="City, airport or address" required></div><div class="form-group"><label for="booking-destination">Destination</label><input id="booking-destination" name="destination" type="text" placeholder="Where are you headed?" required></div>
+        <div class="form-group"><label for="booking-date">Travel date</label><input id="booking-date" name="travel_date" type="date" required></div><div class="form-group"><label for="booking-passengers">Travellers</label><select id="booking-passengers" name="passengers"><option>1–2 people</option><option>3–4 people</option><option>5–7 people</option></select></div>
+        <div class="form-group booking-notes"><label for="booking-notes">Anything else we should know?</label><textarea id="booking-notes" name="notes" placeholder="Pickup time, return trip, luggage..."></textarea></div></div>
+        <label class="booking-consent"><input type="checkbox" required><span>I agree that AS Tours &amp; Travels can use these details to respond to my booking request.</span></label>
+        <button type="submit" class="submit-btn"><span>Send booking request</span><i class="fas fa-arrow-right"></i></button><p class="form-status" id="bookingStatus" role="status" aria-live="polite"></p><p class="form-privacy">Your request is sent securely to our booking team by email. No messaging app will open.</p>
+      </form></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-bottom booking-footer"><p>© 2026 AS Tours &amp; Travels. All rights reserved.</p><a href="index.html">Back to home <i class="fas fa-arrow-up-right-from-square"></i></a></div></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js" defer></script>
+  <script src="js/particles.js" defer></script><script src="js/main.js" defer></script><script src="js/animations.js" defer></script>
+</body>
+</html>

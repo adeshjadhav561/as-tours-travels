@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AS Tours & Travels — Car Rental Service</title>
+  <meta name="description" content="AS Tours & Travels offers Innova Crysta, Ertiga, Dzire and Aura for local and outstation travel.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/as-mark.svg">
+</head>
+<body>
+
+<!-- ===== PRELOADER ===== -->
+<div id="preloader">
+  <div class="loader-ring">
+    <div class="loader-ring-inner"></div>
+    <div class="loader-ring-inner"></div>
+    <div class="loader-ring-inner"></div>
+    <div class="loader-text"><img src="assets/images/as-mark.svg" alt="AS Tours &amp; Travels"></div>
+    <div class="loader-sub">Tours & Travels</div>
+  </div>
+</div>
+
+<div class="ambient-bg"></div>
+<canvas id="lux-particles"></canvas>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-mark"><img src="assets/images/as-mark.svg" alt=""></span>
+    <div class="nav-logo-text">
+      <span class="nav-logo-main">AS</span>
+      <span class="nav-logo-sub">TOURS &amp; TRAVELS</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="fleet.html">Our Fleet</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html" class="nav-cta"><i class="fas fa-calendar-check"></i> Book a Ride</a>
+  </div>
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="hero-tag-line"></span>
+        Since 2020 • Reliable Service
+      </div>
+      <h1 class="hero-title">
+        Travel in <span class="gold">Comfort</span>
+        <span class="line-break">with <span class="gold">AS</span></span>
+      </h1>
+      <p class="hero-desc">
+        Travel comfortably with our well-maintained cars. From Innova Crysta 
+        to the elegant Dzire — every journey with us is a statement of class.
+      </p>
+      <div class="hero-buttons">
+        <a href="fleet.html" class="btn-primary">
+          <i class="fas fa-car"></i> Explore Fleet
+        </a>
+        <a href="tel:+919561345579" class="btn-secondary">
+          <i class="fas fa-phone-alt"></i> Call Now
+        </a>
+        <a href="booking.html" class="btn-primary">
+          <i class="fas fa-calendar-check"></i> Book a Ride
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <h3>500+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="hero-stat">
+          <h3>4</h3>
+          <p>Available Cars</p>
+        </div>
+        <div class="hero-stat">
+          <h3>50+</h3>
+          <p>Cities</p>
+        </div>
+        <div class="hero-stat">
+          <h3>4.9</h3>
+          <p>Star Rating</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-3d-area">
+      <div class="hero-car-wrap">
+        <div class="hero-car-display">
+          <div class="hero-glow-ring"></div>
+          <div class="hero-glow-ring"></div>
+          <div class="hero-glow-ring"></div>
+          <img src="assets/images/catalogue-innova.jpg" alt="Toyota Innova Crysta" class="hero-car-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CINEMATIC FLEET JOURNEY ===== -->
+<section class="drive-story" id="drive-story" aria-label="Explore our fleet">
+  <div class="drive-stage">
+    <div class="drive-atmosphere"></div>
+    <div class="drive-topline"><span>AS TOURS & TRAVELS</span><span class="drive-chapter">01 — 04</span></div>
+    <div class="drive-copy">
+      <p class="drive-kicker">THE JOURNEY, REIMAGINED</p>
+      <h2 class="drive-title">Meet the road.<br><span>Make it yours.</span></h2>
+      <p class="drive-description">Settle in. Your Innova Crysta is ready to carry everyone and everything along.</p>
+      <a class="drive-link" href="fleet.html">EXPLORE THE FLEET <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="drive-car-visual" aria-hidden="true">
+      <div class="drive-orbit drive-orbit-one"></div>
+      <div class="drive-orbit drive-orbit-two"></div>
+      <div class="drive-road"><span></span><span></span><span></span></div>
+      <div class="drive-reflection"></div>
+      <img class="drive-car is-active" src="assets/images/innova-scroll-cutout.png" alt="Toyota Innova Crysta driving through a cinematic road scene">
+      <div class="drive-car-shadow"></div>
+    </div>
+    <div class="drive-model">
+      <span class="drive-model-index">01</span>
+      <div><h3>Innova Crysta</h3><p>Room for the whole journey</p></div>
+      <span class="drive-model-type">PREMIUM MPV</span>
+    </div>
+    <div class="drive-progress"><span></span></div>
+    <div class="drive-scroll-cue"><span></span> SCROLL TO DRIVE</div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section section-alt" id="about">
+  <div class="section-header">
+    <div class="section-tag">About Us</div>
+    <h2 class="section-title">Why Choose <span class="gold">AS</span>?</h2>
+    <p class="section-sub">Your trusted partner for reliable car rentals across India.</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-img-wrap">
+      <div class="about-img-box">
+        <img src="assets/images/catalogue-ertiga.jpg" alt="Maruti Suzuki Ertiga">
+        <div class="about-img-overlay"></div>
+        <div class="about-badge">
+          <h3>5+</h3>
+          <p>Years Excellence</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-content">
+      <h2>We Provide <span class="gold">Reliable</span> Car Rental Services</h2>
+      <p>AS Tours & Travels provides comfortable and reliable travel with well-maintained vehicles and professional drivers. We help make your journey smooth and memorable.</p>
+      <p>We specialize in outstation trips, local packages, wedding transportation, airport transfers, and corporate travel. Our commitment to punctuality, safety, and customer satisfaction sets us apart.</p>
+      <div class="about-features">
+        <div class="about-feat"><span class="icon"><i class="fas fa-check" aria-hidden="true"></i></span><span>4 Well-Maintained Cars</span></div>
+        <div class="about-feat"><span class="icon"><i class="fas fa-check" aria-hidden="true"></i></span><span>Professional Drivers</span></div>
+        <div class="about-feat"><span class="icon"><i class="fas fa-check" aria-hidden="true"></i></span><span>100% Safe & Clean</span></div>
+        <div class="about-feat"><span class="icon"><i class="fas fa-check" aria-hidden="true"></i></span><span>Best Prices</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FLEET ===== -->
+<section class="section" id="fleet">
+  <div class="section-header">
+    <div class="section-tag">Our Fleet</div>
+    <h2 class="section-title">Choose Your <span class="gold">Ride</span></h2>
+    <p class="section-sub">Choose from our four well-maintained cars for your next journey.</p>
+  </div>
+  <div class="fleet-grid">
+    <!-- Innova Crysta -->
+    <div class="fleet-card">
+      <div class="fleet-card-img">
+        <img src="assets/images/catalogue-innova.jpg" alt="Toyota Innova Crysta">
+        <div class="fleet-card-badge">7-Seater MPV</div>
+      </div>
+      <div class="fleet-card-body">
+        <h3>Toyota Innova Crysta</h3>
+        <p>Spacious 7-seater MPV, ideal for long journeys, family trips and group travel.</p>
+        <div class="fleet-price">
+          <span class="rate">₹22</span>
+          <span class="label">/ km AC</span>
+        </div>
+        <div class="fleet-features">
+          <span class="fleet-feat"><i class="fas fa-users"></i> 7 Seater</span>
+          <span class="fleet-feat"><i class="fas fa-snowflake"></i> AC</span>
+          <span class="fleet-feat"><i class="fas fa-shield-alt"></i> Insured</span>
+          <span class="fleet-feat"><i class="fas fa-gas-pump"></i> Diesel</span>
+        </div>
+        <div class="fleet-footer">
+          <a href="pricing.html" class="btn-sm">Details</a>
+          <a href="booking.html?vehicle=Innova%20Crysta"  class="btn-sm book">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Ertiga -->
+    <div class="fleet-card">
+      <div class="fleet-card-img">
+        <img src="assets/images/catalogue-ertiga.jpg" alt="Maruti Suzuki Ertiga">
+        <div class="fleet-card-badge">Family MPV</div>
+      </div>
+      <div class="fleet-card-body">
+        <h3>Maruti Suzuki Ertiga</h3>
+        <p>Perfect 7-seater family MPV. Spacious cabin, excellent mileage, comfortable ride for family outings.</p>
+        <div class="fleet-price">
+          <span class="rate">₹16</span>
+          <span class="label">/ km AC</span>
+        </div>
+        <div class="fleet-features">
+          <span class="fleet-feat"><i class="fas fa-users"></i> 7 Seater</span>
+          <span class="fleet-feat"><i class="fas fa-snowflake"></i> AC</span>
+          <span class="fleet-feat"><i class="fas fa-shield-alt"></i> Insured</span>
+          <span class="fleet-feat"><i class="fas fa-gas-pump"></i> Petrol</span>
+        </div>
+        <div class="fleet-footer">
+          <a href="pricing.html" class="btn-sm">Details</a>
+          <a href="booking.html?vehicle=Ertiga"  class="btn-sm book">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Dzire -->
+    <div class="fleet-card">
+      <div class="fleet-card-img">
+        <img src="assets/images/catalogue-dzire.jpg" alt="Maruti Suzuki Dzire">
+        <div class="fleet-card-badge">Economy Sedan</div>
+      </div>
+      <div class="fleet-card-body">
+        <h3>Maruti Suzuki Dzire</h3>
+        <p>Compact & efficient sedan for city commutes. Excellent mileage, easy maneuverability at the best rates.</p>
+        <div class="fleet-price">
+          <span class="rate">₹13</span>
+          <span class="label">/ km AC</span>
+        </div>
+        <div class="fleet-features">
+          <span class="fleet-feat"><i class="fas fa-users"></i> 5 Seater</span>
+          <span class="fleet-feat"><i class="fas fa-snowflake"></i> AC</span>
+          <span class="fleet-feat"><i class="fas fa-shield-alt"></i> Insured</span>
+          <span class="fleet-feat"><i class="fas fa-gas-pump"></i> Petrol</span>
+        </div>
+        <div class="fleet-footer">
+          <a href="pricing.html" class="btn-sm">Details</a>
+          <a href="booking.html?vehicle=Dzire"  class="btn-sm book">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Aura -->
+    <div class="fleet-card">
+      <div class="fleet-card-img">
+        <img src="assets/images/catalogue-aura.jpg" alt="Hyundai Aura">
+        <div class="fleet-card-badge">Compact Sedan</div>
+      </div>
+      <div class="fleet-card-body">
+        <h3>Hyundai Aura</h3>
+        <p>Stylish compact sedan with modern features. Great fuel efficiency & contemporary design for city drives.</p>
+        <div class="fleet-price">
+          <span class="rate">₹14</span>
+          <span class="label">/ km AC</span>
+        </div>
+        <div class="fleet-features">
+          <span class="fleet-feat"><i class="fas fa-users"></i> 5 Seater</span>
+          <span class="fleet-feat"><i class="fas fa-snowflake"></i> AC</span>
+          <span class="fleet-feat"><i class="fas fa-shield-alt"></i> Insured</span>
+          <span class="fleet-feat"><i class="fas fa-gas-pump"></i> Petrol</span>
+        </div>
+        <div class="fleet-footer">
+          <a href="pricing.html" class="btn-sm">Details</a>
+          <a href="booking.html?vehicle=Aura"  class="btn-sm book">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="section section-alt" id="pricing">
+  <div class="section-header">
+    <div class="section-tag">Pricing</div>
+    <h2 class="section-title">Transparent <span class="gold">Pricing</span></h2>
+    <p class="section-sub">Best rates with no hidden charges. Pay only what you see.</p>
+  </div>
+  <div class="pricing-grid">
+    <!-- Dzire -->
+    <div class="pricing-card">
+      <div class="car-icon"><i class="fas fa-car" aria-hidden="true"></i></div>
+      <h3>Maruti Dzire</h3>
+      <div class="price-sub">Economy Class</div>
+      <span class="price-main-rate">₹13/km</span>
+      <div class="price-main-label">AC — City Rides</div>
+      <div class="pricing-divider"></div>
+      <div class="pricing-details">
+        <div class="pricing-row">
+          <span class="label">Per km AC</span>
+          <span class="value">₹13</span>
+        </div>
+        <div class="pricing-row">
+          <span class="label">Local (80km/8hrs)</span>
+          <span class="value">₹2,500</span>
+        </div>
+        <div class="pricing-row">
+          <span class="label">Outstation</span>
+          <span class="value">₹3,699</span>
+        </div>
+      </div>
+      <a href="booking.html?vehicle=Dzire" class="pricing-btn"><i class="fas fa-phone-alt"></i> Book Dzire</a>
+    </div>
+    <!-- Ertiga (Featured) -->
+    <div class="pricing-card featured">
+      <div class="car-icon"><i class="fas fa-car" aria-hidden="true"></i></div>
+      <h3>Maruti Ertiga</h3>
+      <div class="price-sub">Family Class</div>
+      <span class="price-main-rate">₹16/km</span>
+      <div class="price-main-label">AC — Best for Family</div>
+      <div class="pricing-divider"></div>
+      <div class="pricing-details">
+        <div class="pricing-row">
+          <span class="label">Per km AC</span>
+          <span class="value">₹16</span>
+        </div>
+        <div class="pricing-row">
+          <span class="label">Local (80km/8hrs)</span>
+          <span class="value">₹3,000</span>
+        </div>
+        <div class="pricing-row">
+          <span class="label">Outstation</span>
+          <span class="value">₹4,999</span>
+        </div>
+      </div>
+      <a href="booking.html?vehicle=Ertiga" class="pricing-btn"><i class="fas fa-phone-alt"></i> Book Ertiga</a>
+    </div>
+    <!-- Innova Crysta -->
+    <div class="pricing-card">
+      <div class="car-icon"><i class="fas fa-car" aria-hidden="true"></i></div>
+      <h3>Innova Crysta</h3>
+      <div class="price-sub">7-Seater MPV</div>
+      <span class="price-main-rate">₹22/km</span>
+      <div class="price-main-label">AC — Comfortable Travel</div>
+      <div class="pricing-divider"></div>
+      <div class="pricing-details">
+        <div class="pricing-row">
+          <span class="label">Per km AC</span>
+          <span class="value">₹22</span>
+        </div>
+        <div class="pricing-row">
+          <span class="label">Local (80km/8hrs)</span>
+          <span class="value">₹3,500</span>
+        </div>
+        <div class="pricing-row">
+          <span class="label">Outstation</span>
+          <span class="value">₹6,999</span>
+        </div>
+      </div>
+      <a href="booking.html?vehicle=Innova%20Crysta" class="pricing-btn"><i class="fas fa-phone-alt"></i> Book Innova</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section" id="services">
+  <div class="section-header">
+    <div class="section-tag">Our Services</div>
+    <h2 class="section-title">What We <span class="gold">Offer</span></h2>
+    <p class="section-sub">Comprehensive car rental solutions for all your travel needs.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-route" aria-hidden="true"></i></div>
+      <h3>Outstation Trips</h3>
+      <p>Comfortable long-distance travel with experienced drivers. Explore new destinations with our well-maintained cars.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-city" aria-hidden="true"></i></div>
+      <h3>Local Packages</h3>
+      <p>Convenient city travel with our local packages. 80km/8hrs coverage for all your daily commute needs.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-plane" aria-hidden="true"></i></div>
+      <h3>Airport Transfer</h3>
+      <p>Punctual airport pickup and drop services. Track your driver in real-time for a seamless experience.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-ring" aria-hidden="true"></i></div>
+      <h3>Wedding Fleet</h3>
+      <p>Make your special day memorable with dependable guest transportation and travel support.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-building" aria-hidden="true"></i></div>
+      <h3>Corporate Travel</h3>
+      <p>Professional corporate travel solutions for your business needs. Executive cars with dedicated drivers.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-champagne-glasses" aria-hidden="true"></i></div>
+      <h3>Event Transport</h3>
+      <p>Group transportation for events, parties, and functions. Multiple vehicles available for large groups.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="section section-alt" id="gallery">
+  <div class="section-header">
+    <div class="section-tag">Gallery</div>
+    <h2 class="section-title">Our <span class="gold">Moments</span></h2>
+    <p class="section-sub">A look at the cars available for your journey.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="assets/images/catalogue-innova.jpg" alt="Innova Crysta">
+      <div class="gallery-overlay"><h4>✦ Innova Crysta</h4></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/catalogue-ertiga.jpg" alt="Ertiga">
+      <div class="gallery-overlay"><h4>✦ Maruti Ertiga</h4></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/catalogue-dzire.jpg" alt="Dzire">
+      <div class="gallery-overlay"><h4>✦ Maruti Dzire</h4></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/catalogue-aura.jpg" alt="Aura">
+      <div class="gallery-overlay"><h4>✦ Hyundai Aura</h4></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/catalogue-innova.jpg" alt="Innova Crysta">
+      <div class="gallery-overlay"><h4>✦ Innova Crysta</h4></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/catalogue-ertiga.jpg" alt="Maruti Ertiga">
+      <div class="gallery-overlay"><h4>✦ Scenic Road Trip</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="section-header">
+    <div class="section-tag">Contact Us</div>
+    <h2 class="section-title">Get In <span class="gold">Touch</span></h2>
+    <p class="section-sub">Ready to book? Contact us anytime. We're here 24/7.</p>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
+        <div>
+          <h4>Phone</h4>
+          <p>+91 9561345579</p>
+          <p>+91 7769079493</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+        <div>
+          <h4>Email</h4>
+          <p>adeshjadhav561@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-phone-volume" aria-hidden="true"></i></div>
+        <div>
+          <h4>Toll Free</h4>
+          <p>022 68925010</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+        <div>
+          <h4>Location</h4>
+          <p>India — Serving all major cities</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-box">
+      <h3>Book Your <span class="gold">Ride</span></h3>
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-group">
+          <select id="service">
+            <option value="">Select Car</option>
+            <option value="innova">Innova Crysta — ₹22/km</option>
+            <option value="ertiga">Ertiga — ₹16/km</option>
+            <option value="dzire">Dzire — ₹13/km</option>
+            <option value="aura">Aura — ₹14/km</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Pickup, Destination & Date/Time"></textarea>
+        </div>
+        <label class="booking-consent"><input type="checkbox" required><span>I agree that AS Tours &amp; Travels can use these details to respond to my booking request.</span></label>
+        <button type="submit" class="submit-btn"><span>Send booking request</span><i class="fas fa-arrow-right"></i></button>
+        <p class="form-status" id="homeBookingStatus" role="status" aria-live="polite"></p>
+        <p class="form-privacy">Your request is sent to our booking team by email. No messaging app will open.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo"><img src="assets/images/as-mark.svg" alt="">AS Tours &amp; Travels</div>
+      <p>Reliable car rental service focused on comfort, safety and punctuality. Your journey, our responsibility.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="fleet.html">Our Fleet</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Our Fleet</h4>
+      <ul class="footer-links">
+        <li><a href="fleet.html">Innova Crysta</a></li>
+        <li><a href="fleet.html">Maruti Ertiga</a></li>
+        <li><a href="fleet.html">Maruti Dzire</a></li>
+        <li><a href="fleet.html">Hyundai Aura</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact Info</h4>
+      <div class="footer-contact">
+        <p><i class="fas fa-phone-alt" style="color: var(--champagne);"></i> +91 9561345579</p>
+        <p><i class="fas fa-phone-alt" style="color: var(--champagne);"></i> +91 7769079493</p>
+        <p><i class="fas fa-envelope" style="color: var(--champagne);"></i> adeshjadhav561@gmail.com</p>
+        <p><i class="fas fa-phone" style="color: var(--champagne);"></i> 022 68925010</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 AS Tours & Travels. All rights reserved.</p>
+    <div class="footer-social"><a href="tel:+919561345579" aria-label="Call AS Tours and Travels"><i class="fas fa-phone"></i></a><a href="mailto:adeshjadhav561@gmail.com" aria-label="Email AS Tours and Travels"><i class="fas fa-envelope"></i></a></div>
+  </div>
+</footer>
+
+
+
+
+<button class="scroll-top" aria-label="Scroll to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js" defer></script>
+<script src="js/particles.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/animations.js" defer></script>
+</body>
+</html>
