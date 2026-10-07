@@ -324,7 +324,7 @@
       <div class="pricing-divider"></div>
       <div class="pricing-details">
         <div class="pricing-row"><span class="label">Per km AC</span><span class="value">₹14</span></div>
-        <div class="pricing-row"><span class="label">Local (80km/8hrs)</span><span class="value">₹2,700</span></div>
+        <div class="pricing-row"><span class="label">Local (80km/8hrs)</span><span class="value">Not available</span></div>
         <div class="pricing-row"><span class="label">Outstation (300km/day)</span><span class="value">₹3,900/day</span></div>
         <div class="pricing-row"><span class="label">Seating</span><span class="value">4 Persons</span></div>
       </div>
@@ -391,10 +391,11 @@
   <div class="contact-form-box" style="max-width: 900px; margin: 0 auto;">
     <form id="tripPlannerForm">
       <div class="booking-fields">
+        <div class="form-group"><label for="planner-trip-type">Trip type</label><select id="planner-trip-type" name="trip_type" required><option value="">Select trip type</option><option value="local">Local Trip</option><option value="outstation">Outstation Trip</option></select></div>
         <div class="form-group"><label for="planner-pickup">Starting from</label><input id="planner-pickup" name="pickup" type="text" placeholder="City or pickup point" required></div>
         <div class="form-group"><label for="planner-destination">Destination</label><input id="planner-destination" name="destination" type="text" placeholder="Where would you like to go?" required></div>
         <div class="form-group"><label for="planner-date">Travel date</label><input id="planner-date" name="date" type="date" required></div>
-        <div class="form-group"><label for="planner-days">Trip duration</label><select id="planner-days" name="days" required><option value="1">1 day</option><option value="2">2 days</option><option value="3">3 days</option><option value="4">4 days</option><option value="5">5 days</option><option value="6">6 days</option><option value="7">7 days</option><option value="8">8 days</option><option value="9">9 days</option><option value="10">10 days</option></select></div>
+        <div class="form-group" id="planner-days-group" hidden><label for="planner-days">Trip duration</label><select id="planner-days" name="days" disabled><option value="1">1 day</option><option value="2">2 days</option><option value="3">3 days</option><option value="4">4 days</option><option value="5">5 days</option><option value="6">6 days</option><option value="7">7 days</option><option value="8">8 days</option><option value="9">9 days</option><option value="10">10 days</option></select></div>
         <div class="form-group"><label for="planner-passengers">Travellers</label><select id="planner-passengers" name="passengers" required><option value="1">1 person</option><option value="2">2 people</option><option value="3">3 people</option><option value="4">4 people</option><option value="5">5 people</option><option value="6">6 people</option><option value="7">7 people</option><option value="8">8+ people</option></select></div>
       </div>
       <button type="submit" class="submit-btn"><span>Get my trip plan</span><i class="fas fa-arrow-right"></i></button>
