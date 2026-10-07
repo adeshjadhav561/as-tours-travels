@@ -96,10 +96,26 @@ document.addEventListener('DOMContentLoaded', () => {
       const now = new Date();
       dateInput.min = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
     }
-    const requestedVehicle = new URLSearchParams(window.location.search).get('vehicle');
+    const bookingParams = new URLSearchParams(window.location.search);
+    const requestedVehicle = bookingParams.get('vehicle');
     if (vehicleSelect && requestedVehicle) {
       const match = [...vehicleSelect.options].find(option => option.textContent.toLowerCase().includes(requestedVehicle.toLowerCase()));
       if (match) vehicleSelect.value = match.value || match.textContent;
+    }
+    const bookingFields = {
+      pickup: form.querySelector('#booking-pickup'),
+      destination: form.querySelector('#booking-destination'),
+      travel_date: form.querySelector('#booking-date'),
+      notes: form.querySelector('#booking-notes')
+    };
+    Object.entries(bookingFields).forEach(([key, field]) => {
+      const value = bookingParams.get(key);
+      if (field && value) field.value = value;
+    });
+    const passengerCount = Number(bookingParams.get('passengers'));
+    const passengerSelect = form.querySelector('#booking-passengers');
+    if (passengerSelect && passengerCount) {
+      passengerSelect.value = passengerCount <= 2 ? '1–2 people' : passengerCount <= 4 ? '3–4 people' : '5–7 people';
     }
 
     form.addEventListener('submit', async event => {

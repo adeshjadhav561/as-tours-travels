@@ -242,7 +242,7 @@
           <span class="label">/ km AC</span>
         </div>
         <div class="fleet-features">
-          <span class="fleet-feat"><i class="fas fa-users"></i> 5 Seater</span>
+          <span class="fleet-feat"><i class="fas fa-users"></i> 4 Seater</span>
           <span class="fleet-feat"><i class="fas fa-snowflake"></i> AC</span>
           <span class="fleet-feat"><i class="fas fa-shield-alt"></i> Insured</span>
           <span class="fleet-feat"><i class="fas fa-gas-pump"></i> Petrol</span>
@@ -267,7 +267,7 @@
           <span class="label">/ km AC</span>
         </div>
         <div class="fleet-features">
-          <span class="fleet-feat"><i class="fas fa-users"></i> 5 Seater</span>
+          <span class="fleet-feat"><i class="fas fa-users"></i> 4 Seater</span>
           <span class="fleet-feat"><i class="fas fa-snowflake"></i> AC</span>
           <span class="fleet-feat"><i class="fas fa-shield-alt"></i> Insured</span>
           <span class="fleet-feat"><i class="fas fa-gas-pump"></i> Petrol</span>
@@ -307,11 +307,28 @@
           <span class="value">₹2,500</span>
         </div>
         <div class="pricing-row">
-          <span class="label">Outstation</span>
-          <span class="value">₹3,699</span>
+          <span class="label">Outstation (300km/day)</span>
+          <span class="value">₹4,200/day</span>
         </div>
+        <div class="pricing-row"><span class="label">Seating</span><span class="value">4 Persons</span></div>
       </div>
       <a href="booking.html?vehicle=Dzire" class="pricing-btn"><i class="fas fa-phone-alt"></i> Book Dzire</a>
+    </div>
+    <!-- Aura -->
+    <div class="pricing-card">
+      <div class="car-icon"><i class="fas fa-car" aria-hidden="true"></i></div>
+      <h3>Hyundai Aura</h3>
+      <div class="price-sub">Compact Class</div>
+      <span class="price-main-rate">₹14/km</span>
+      <div class="price-main-label">AC — Style &amp; Comfort</div>
+      <div class="pricing-divider"></div>
+      <div class="pricing-details">
+        <div class="pricing-row"><span class="label">Per km AC</span><span class="value">₹14</span></div>
+        <div class="pricing-row"><span class="label">Local (80km/8hrs)</span><span class="value">₹2,700</span></div>
+        <div class="pricing-row"><span class="label">Outstation (300km/day)</span><span class="value">₹3,900/day</span></div>
+        <div class="pricing-row"><span class="label">Seating</span><span class="value">4 Persons</span></div>
+      </div>
+      <a href="booking.html?vehicle=Aura" class="pricing-btn"><i class="fas fa-phone-alt"></i> Book Aura</a>
     </div>
     <!-- Ertiga (Featured) -->
     <div class="pricing-card featured">
@@ -331,8 +348,8 @@
           <span class="value">₹3,000</span>
         </div>
         <div class="pricing-row">
-          <span class="label">Outstation</span>
-          <span class="value">₹4,999</span>
+          <span class="label">Outstation (300km/day)</span>
+          <span class="value">₹4,800/day</span>
         </div>
       </div>
       <a href="booking.html?vehicle=Ertiga" class="pricing-btn"><i class="fas fa-phone-alt"></i> Book Ertiga</a>
@@ -355,12 +372,34 @@
           <span class="value">₹3,500</span>
         </div>
         <div class="pricing-row">
-          <span class="label">Outstation</span>
-          <span class="value">₹6,999</span>
+          <span class="label">Outstation (300km/day)</span>
+          <span class="value">₹6,600/day</span>
         </div>
       </div>
       <a href="booking.html?vehicle=Innova%20Crysta" class="pricing-btn"><i class="fas fa-phone-alt"></i> Book Innova</a>
     </div>
+  </div>
+</section>
+
+<!-- ===== SMART TRIP PLANNER ===== -->
+<section class="section section-alt" id="trip-planner">
+  <div class="section-header">
+    <div class="section-tag">SMART TRIP PLANNER</div>
+    <h2 class="section-title">Plan your <span class="gold">journey</span></h2>
+    <p class="section-sub">Choose your route and group size to get a vehicle recommendation and outstation estimate.</p>
+  </div>
+  <div class="contact-form-box" style="max-width: 900px; margin: 0 auto;">
+    <form id="tripPlannerForm">
+      <div class="booking-fields">
+        <div class="form-group"><label for="planner-pickup">Starting from</label><input id="planner-pickup" name="pickup" type="text" placeholder="City or pickup point" required></div>
+        <div class="form-group"><label for="planner-destination">Destination</label><input id="planner-destination" name="destination" type="text" placeholder="Where would you like to go?" required></div>
+        <div class="form-group"><label for="planner-date">Travel date</label><input id="planner-date" name="date" type="date" required></div>
+        <div class="form-group"><label for="planner-days">Trip duration</label><select id="planner-days" name="days" required><option value="1">1 day</option><option value="2">2 days</option><option value="3">3 days</option><option value="4">4 days</option><option value="5">5 days</option><option value="6">6 days</option><option value="7">7 days</option><option value="8">8 days</option><option value="9">9 days</option><option value="10">10 days</option></select></div>
+        <div class="form-group"><label for="planner-passengers">Travellers</label><select id="planner-passengers" name="passengers" required><option value="1">1 person</option><option value="2">2 people</option><option value="3">3 people</option><option value="4">4 people</option><option value="5">5 people</option><option value="6">6 people</option><option value="7">7 people</option><option value="8">8+ people</option></select></div>
+      </div>
+      <button type="submit" class="submit-btn"><span>Get my trip plan</span><i class="fas fa-arrow-right"></i></button>
+      <div class="form-status" id="tripPlannerResult" role="status" aria-live="polite"></div>
+    </form>
   </div>
 </section>
 
@@ -568,5 +607,6 @@
 <script src="js/particles.js" defer></script>
 <script src="js/main.js" defer></script>
 <script src="js/animations.js" defer></script>
+<script src="js/trip-planner.js" defer></script>
 </body>
 </html>
